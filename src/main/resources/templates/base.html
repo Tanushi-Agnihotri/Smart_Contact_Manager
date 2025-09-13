@@ -1,0 +1,49 @@
+<html class ="dark" data-th-fragment = "parent(content,title)">
+
+<head>
+    <title data-th-replace="${title}">SCM</title>
+    <link rel="stylesheet" data-th-href = "@{'/css/output.css'}"/>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white dark:bg-black">
+<!--navbar-->
+    <div data-th-replace ="~{navbar::navbar}"></div>
+
+<!--main content-->
+    <div data-th-replace="${content}"></div>
+
+<!--flowbite-->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script data-th-src="@{'/js/script.js'}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div data-th-fragment="parent(content)">-->
+<!--    <p>This is login fragment</p>-->
+<!--    <p>Value of x is <span data-th-text="${x}"></span></p>-->
+<!--    <p>Value of y is <span data-th-text="${y}"></span></p>-->
+<!--    <div data-th-insert="${content}"></div>-->
+<!--</div>-->
+
+
+
+<!--<div data-th-fragment="child(content)">-->
+<!--    <p>This is logoff fragment</p>-->
+<!--    <div data-th-insert="${content}"></div>-->
+<!--</div>-->

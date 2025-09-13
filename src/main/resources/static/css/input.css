@@ -1,0 +1,3 @@
+@import "tailwindcss";
+/* Add custom dark variant override */
+@custom-variant dark (&:where(.dark, .dark *));
